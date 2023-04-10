@@ -1,0 +1,291 @@
+.contact {
+    background: var(--secondary-light-color);
+}
+
+.contact__wrapper {
+    padding: 70px 0;
+}
+
+.contact__title {
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+.contact__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.035em;
+    color: var(--form-fields-color);
+    margin-bottom: 77px;
+}
+
+.contact__subtitle a {
+    color: #F11E3C;
+}
+
+.form form {
+    max-width: 916px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__field {
+    width: 407px;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.form__field input {
+    position: relative;
+    width: inherit;
+    height: 34px;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid var(--form-fields-color);
+    color: var(--text-color);
+    padding: 10px 25px 10px 5px;
+    transition: all .25s ease-in-out;
+}
+
+.form__field input,
+.form__field input::placeholder,
+.form__field:nth-of-type(7) span,
+.form__field textarea,
+.form__field textarea::placeholder,
+.form__field:nth-of-type(4) select {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.035em;
+}
+
+.form__field:nth-of-type(4) select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--form-fields-color);
+    outline: none;
+    padding: 0;
+    color: var(--text-color);
+    padding-bottom: 5px;
+}
+
+.form__field input::placeholder,
+.form__field:nth-of-type(7) span,
+.form__field textarea::placeholder {
+    color: var(--form-fields-color);
+}
+
+.form__field:nth-of-type(7) {
+    width: 100%;
+}
+
+.form__field:nth-of-type(7) .field-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__field:nth-of-type(7) input {
+    opacity: 0;
+    position: absolute;
+}
+
+.form__field:nth-of-type(7) label {
+    position: relative;
+    z-index: 999;
+}
+
+.form__field:nth-of-type(8) {
+    width: 100%;
+}
+
+.form__field textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--form-fields-color);
+    color: var(--text-color);
+    padding: 10px 25px 10px 0;
+    transition: all .25s ease-in-out;
+    outline: none;
+}
+
+.field-files li {
+    margin-left: 14px;
+}
+
+.form__field:last-of-type {
+    width: auto;
+    margin-bottom: 0;
+}
+
+.form__field input[type="submit"] {
+    position: relative;
+    width: 302px;
+    height: 80px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.035em;
+    background: var(--text-color);
+    border-radius: 160px;
+    color: var(--bg-color);
+    text-align: left;
+    padding-left: 42px;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+.form__field:last-of-type::after {
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 2px;
+    background: var(--bg-color);
+    right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .25s ease-in-out;
+}
+
+.form__field:last-of-type::before {
+    opacity: 0;
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 30px;
+    background: var(--bg-color);
+    right: 61px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    transition: all .25s ease-in-out;
+}
+
+.form__field:last-of-type:hover input[type="submit"] {
+    background: #F51B55;
+    color: #fff;
+}
+
+.form__field:last-of-type:hover:after {
+    width: 30px;
+    background: #fff;
+}
+
+.form__field:last-of-type:hover:before {
+    opacity: 1;
+    background: #fff;
+}
+
+.form__field:nth-of-type(1) label {
+    position: relative;
+}
+
+.form__field:nth-of-type(1) label:after,
+.form__field:nth-of-type(2) label:after,
+.form__field:nth-of-type(3) label:after,
+.form__field:nth-of-type(5) label:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '*';
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.035em;
+    color: #6C6C6C;
+    transition: all .25s ease-in-out;
+}
+
+.form__field input:invalid {
+    border-bottom: 1px solid #F51B55;
+}
+
+.form__field input:invalid~label:after {
+    color: #F51B55;
+}
+
+.form__field:nth-of-type(1) input:valid,
+.form__field:nth-of-type(2) input:valid,
+.form__field:nth-of-type(3) input:valid,
+.form__field:nth-of-type(5) input:valid {
+    border-bottom: 1px solid #00CD15;
+}
+
+.form__field:nth-of-type(1) input:valid~label:after,
+.form__field:nth-of-type(2) input:valid~label:after,
+.form__field:nth-of-type(3) input:valid~label:after,
+.form__field:nth-of-type(5) input:valid~label:after {
+    color: #00CD15;
+}
+
+.field-files {
+    margin-top: 20px;
+}
+
+.field-files ol {
+    margin-bottom: 20px;
+}
+
+.form__field:nth-of-type(7) {
+    margin-bottom: 44px;
+}
+
+@media (max-width: 991px) {
+    .form__field {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact__subtitle {
+        font-size: 2.1rem;
+        line-height: 3rem;
+    }
+
+    .form__field textarea[name="project"] {
+        height: 150px;
+    }
+}
+
+@media (max-width: 575px) {
+    .form__field {
+        margin-bottom: 45px;
+    }
+
+    .form__field:nth-of-type(5) {
+        margin-bottom: 25px;
+    }
+
+    .form__field:nth-of-type(5) .field-wrap {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .form__field:nth-of-type(5) span {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .form__field:last-of-type {
+        margin-top: 19px;
+    }
+
+    .form__field input[type="submit"] {
+        width: 260px;
+    }
+
+    .form__field:last-of-type::after {
+        width: 40px;
+    }
+}

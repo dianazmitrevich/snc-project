@@ -1,0 +1,563 @@
+.banner__wrapper {
+    padding: 107px 0 40px;
+}
+
+.banner__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__row:nth-of-type(1) {
+    margin-bottom: 80px;
+}
+
+.banner__row:nth-of-type(1) .banner__col:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__title {
+    margin: 0;
+    max-width: 793px;
+    margin-bottom: 35px;
+}
+
+.banner__likes {
+    position: relative;
+    height: fit-content;
+    display: flex;
+}
+
+.banner__likes .likes-count {
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.banner__form button[type="submit"] {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.banner__row:nth-of-type(1) .banner__col:nth-of-type(2) {
+    width: 100%;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__row:nth-of-type(1) .banner__col:nth-of-type(2) .col-part {
+    width: 590px;
+}
+
+.banner__row:nth-of-type(2) .banner__col:nth-of-type(1) {
+    margin-bottom: 60px;
+    display: flex;
+}
+
+.banner__col-item {
+    margin-right: 80px;
+}
+
+.banner__col-item .item-title,
+.banner__col-tags .tag-title {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.banner__col-item .item-subtitle {
+    font-family: 'Neutral Face', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.095em;
+}
+
+.banner__col-tags .tags {
+    padding: 30px;
+    border-top: 0.8px solid var(--text-color);
+    border-bottom: 0.8px solid var(--text-color);
+}
+
+.banner__col-tags a {
+    display: inline-block;
+    margin-right: 50px;
+    font-family: 'Neutral Face', sans-serif;
+    font-size: 2.3rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.1em;
+    color: #F51B55;
+}
+
+.images__wrapper {
+    padding: 40px 0 20px;
+}
+
+.images__cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image__card {
+    width: calc((100% - 20px) / 2);
+    height: 285px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all .25s ease-in-out;
+}
+
+.image__card .card-wrapper {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image__card .card-wrapper img {
+    transition: all .25s ease-in-out;
+}
+
+.image__card .card-btn {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+    transition: all .25s ease-in-out;
+}
+
+.images__popup {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all .25s ease-in-out;
+}
+
+.images__popup .popup {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.images__popup .popup__wrapper img {
+    width: 60vw;
+    height: auto;
+}
+
+.images__popup .popup__images {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.images__popup .popup__images .slick-list {
+    width: 60vw;
+}
+
+.images__popup .popup-prev,
+.images__popup .popup-next {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.images__popup .popup-prev img,
+.images__popup .popup-next img {
+    width: 20px;
+    height: 20px;
+}
+
+.images__popup .popup-prev img {
+    transform: rotate(-135deg);
+    margin-right: 30px;
+}
+
+.images__popup .popup-next img {
+    transform: rotate(45deg);
+    margin-left: 30px;
+}
+
+.images__popup .popup__close {
+    position: absolute;
+    width: 60vw;
+    left: 50%;
+    top: -70px;
+    padding: 10px 10px;
+    transform: translateX(-50%);
+    background: #fff;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.images__popup .popup__close .btn-transparent {
+    border-color: #000;
+    color: #000 !important;
+    width: 140px;
+    transition: all .25s ease-in-out;
+}
+
+.text-info__wrapper {
+    padding: 40px 0 30px;
+}
+
+.text-info__desc {
+    max-width: 895px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.text-info__desc p {
+    margin-bottom: 20px;
+}
+
+.team__wrapper {
+    padding: 50px 0 70px;
+}
+
+.team__title {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.team__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team__card {
+    width: calc((100% - 40px) / 2);
+    margin-bottom: 20px;
+}
+
+.team__card .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team__card .card__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.team__card .card__image img {
+    height: auto;
+    width: 100%;
+}
+
+.team__card .card__text {
+    width: calc(100% - 150px);
+}
+
+.team__card .card__name {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.team__card .card__position {
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.04em;
+    width: auto;
+}
+
+.stack__wrapper {
+    padding: 70px 0 90px;
+}
+
+.stack__title {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.stack__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stack__card {
+    margin-right: 90px;
+}
+
+.stack__card:nth-of-type(7n) {
+    margin-right: 0;
+}
+
+.stack__card .card__image {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack__card .card__image img {
+    height: 100%;
+    width: auto;
+}
+
+@media (max-width: 1239px) {}
+
+@media (max-width: 991px) {
+    .banner__wrapper {
+        padding-bottom: 30px;
+    }
+
+    .banner__row:nth-of-type(1) {
+        margin-bottom: 60px;
+    }
+
+    .banner__row:nth-of-type(1) .banner__col:nth-of-type(1) {
+        flex-direction: column;
+    }
+
+    .banner__likes {
+        background: var(--secondary-light-color);
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .banner__likes:before {
+        top: 20px;
+        right: 20px;
+    }
+
+    .banner__row:nth-of-type(1) .banner__col:nth-of-type(2) {
+        flex-wrap: wrap;
+    }
+
+    .banner__row:nth-of-type(1) .col-part {
+        margin-bottom: 20px;
+    }
+
+    .images__wrapper {
+        padding-top: 30px;
+    }
+
+    .image__card {
+        height: 240px;
+    }
+
+    .text-info__wrapper {
+        padding-top: 20px;
+    }
+
+    .team__wrapper {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .team__title {
+        margin-bottom: 40px;
+    }
+
+    .team__card {
+        width: 100%;
+    }
+
+    .stack__wrapper {
+        padding-top: 60px;
+    }
+
+    .stack__title {
+        margin-bottom: 40px;
+    }
+
+    .stack__card {
+        width: calc((100% - 20px) / 4);
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner__title {
+        margin-bottom: 20px;
+    }
+
+    .banner__col-item {
+        margin-right: 40px;
+    }
+
+    .banner__row:nth-of-type(1) .banner__col:nth-of-type(2) {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+
+    .banner__col-item .item-title {
+        font-size: 2rem;
+    }
+
+    .banner__col-item .item-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .banner__col-tags .tags a {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .image__card {
+        height: 200px;
+    }
+
+    .team__card .card__text {
+        width: calc(100% - 130px);
+    }
+
+    .team__card .card__name {
+        font-size: 2rem;
+    }
+
+    .team__card .card__position {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .stack__wrapper {
+        padding-top: 40px;
+    }
+
+    .stack__card {
+        width: calc((100% - 20px) / 4);
+    }
+
+    .stack__card .card__image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner__wrapper {
+        padding-top: 60px;
+    }
+
+    .banner__likes {
+        margin-bottom: 20px;
+    }
+
+    .banner__row:nth-of-type(2) .banner__col:nth-of-type(1) {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .banner__row:nth-of-type(1) .banner__col:nth-of-type(2) {
+        font-size: 1.8rem;
+        line-height: 2.9rem;
+    }
+
+    .banner__row:nth-of-type(1) {
+        margin-bottom: 40px;
+    }
+
+    .banner__col-item {
+        margin-bottom: 30px;
+    }
+
+    .banner__col-tags .tags {
+        padding: 10px 20px;
+    }
+
+    .banner__col-tags .tags a {
+        padding: 10px 0;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin-right: 30px;
+    }
+
+    .images__wrapper {
+        padding-top: 10px;
+    }
+
+    .image__card {
+        width: 100%;
+    }
+
+    .text-info__wrapper {
+        padding-top: 0;
+    }
+
+    .team__wrapper {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+    .team__card .card__image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team__card .card__text {
+        width: calc(100% - 100px);
+    }
+
+    .team__card .card__name {
+        font-size: 1.8rem;
+    }
+
+    .team__card .card__position {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .stack__wrapper {
+        padding-bottom: 70px;
+    }
+
+    .stack__card {
+        width: 100px;
+    }
+
+    .stack__card .card__image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.image__card:hover .card-wrapper img {
+    transform: scale(1.1);
+}
+
+.image__card:hover .card-btn {
+    transform: rotate(45deg);
+}
+
+.popup__close:hover .btn-transparent {
+    background: #F51B55;
+    border-color: #F51B55;
+    color: #fff !important;
+}

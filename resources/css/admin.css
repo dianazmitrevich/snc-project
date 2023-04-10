@@ -1,0 +1,503 @@
+.hero__wrapper {
+    padding: 107px 0;
+}
+
+.hero__title {
+    max-width: 800px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.hero__subtitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.035em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__wrapper .form-edit {
+    display: none;
+}
+
+.hero__tabs .form-add {
+    display: none;
+}
+
+.hero__tab {
+    margin-bottom: 30px;
+    transition: background .25s ease-in-out;
+}
+
+.hero__tab .tab {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: background .15s ease-in;
+    display: none;
+}
+
+.hero__tab .form__wrap {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.hero__form .form__error {
+    width: 255px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #F51B55 !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    opacity: .5;
+}
+
+.hero__tab .form__wrap .form__item {
+    margin-right: 20px;
+}
+
+.hero__tab .form .delete-btn {
+    margin-top: 40px;
+}
+
+.hero__tab-selected .tab {
+    display: block;
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+}
+
+.hero__tab span {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 30px;
+    border-top: 0.8px solid var(--text-color);
+    border-bottom: 0.8px solid var(--text-color);
+    font-family: 'Neutral Face', sans-serif;
+    font-size: 2.3rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.1em;
+    color: #F51B55;
+    position: relative;
+}
+
+.hero__tab-selected span {
+    background: #F51B55;
+    color: #fff;
+    border-color: #F51B55;
+}
+
+.hero__tab-selected .hero__tab-add {
+    display: block;
+}
+
+.hero__tab-add {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 99999;
+}
+
+.hero__tab-add button,
+.hero__subtitle button {
+    font-family: 'Neutral Face', sans-serif;
+    font-size: 2.3rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-decoration: underline;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hero__subtitle button {
+    color: #F11E3C !important;
+}
+
+.hero__tab .tab,
+.hero__keys .tab {
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content;
+    background: var(--secondary-light-color);
+    padding: 20px;
+}
+
+.tab__table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.tab__table thead tr {
+    background: var(--secondary-light-color) !important;
+}
+
+.tab__table th {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Neutral Face', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.tab__table td {
+    border: .8px solid var(--form-fields-color);
+    padding: 10px;
+}
+
+.tab__table tr {
+    transition: all .15s ease-in-out;
+}
+
+.tab__table img {
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.tab__table .table-actions {
+    width: 14% !important;
+}
+
+.tab__table .table-buttons .wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.edit-btn {
+    color: #00CD15;
+}
+
+.delete-btn {
+    color: #F51B55;
+}
+
+.hero__tabs .control-buttons,
+.custom-btn-wrap {
+    width: 100%;
+    display: flex;
+}
+
+.hero__tabs .control-buttons .btn-main,
+.custom-btn-wrap .btn-main {
+    background: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.hero__tabs .control-buttons .btn-main:hover,
+.custom-btn-wrap .btn-main:hover {
+    background: #F51B55;
+    color: #fff;
+}
+
+.hero__tabs .control-buttons .btn-main:first-child {
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.hero__tabs .control-buttons .mr2 {
+    margin-right: 20px;
+}
+
+.hero__wrapper .hero__popup {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.hero__wrapper .hero__popup .popup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero__wrapper .hero__popup .popup__wrapper {
+    max-width: 50%;
+    padding: 20px;
+    background: #fff;
+}
+
+.popup__wrapper .popup__close {
+    margin-bottom: 40px;
+}
+
+.popup__images img {
+    max-width: 100px;
+}
+
+.popup__images .images-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.popup__images .images-item {
+    margin-right: 20px;
+}
+
+.hero__popup-single {
+    display: block !important;
+}
+
+.tab__table tr:hover {
+    background: var(--tr-hover);
+}
+
+.hero__form .form__wrap {
+    width: 550px;
+    background: var(--secondary-light-color);
+    padding: 64px;
+}
+
+.hero__logo {
+    text-align: center;
+}
+
+.hero__logo img {
+    width: 96px;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.hero__form {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.form__field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.form__field input {
+    position: relative;
+    width: inherit;
+    height: 34px;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid var(--form-fields-color);
+    color: var(--text-color);
+    padding: 10px 25px 10px 0;
+    transition: all .25s ease-in-out;
+}
+
+.form__field input,
+.form__field input::placeholder {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.035em;
+}
+
+.form__field input::placeholder {
+    color: var(--form-fields-color);
+}
+
+.form__field:nth-of-type(1) label:after,
+.form__field:nth-of-type(2) label:after,
+.form__field:nth-of-type(3) label:after,
+.form__field:nth-of-type(4) label:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '*';
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.035em;
+    color: #6C6C6C;
+    transition: all .25s ease-in-out;
+}
+
+.form__field input:invalid {
+    border-bottom: 1px solid #F51B55;
+}
+
+.form__field input:invalid~label:after {
+    color: #F51B55;
+}
+
+.form__field:nth-of-type(1) input:valid,
+.form__field:nth-of-type(2) input:valid,
+.form__field:nth-of-type(3) input:valid,
+.form__field:nth-of-type(4) input:valid {
+    border-bottom: 1px solid #00CD15;
+}
+
+.form__field:nth-of-type(1) input:valid~label:after,
+.form__field:nth-of-type(2) input:valid~label:after,
+.form__field:nth-of-type(3) input:valid~label:after,
+.form__field:nth-of-type(4) input:valid~label:after {
+    color: #00CD15;
+}
+
+.form__field:last-of-type {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.form__field input[type="submit"] {
+    position: relative;
+    width: 302px;
+    height: 80px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.035em;
+    background: var(--text-color);
+    border-radius: 160px;
+    color: var(--bg-color);
+    text-align: left;
+    padding-left: 42px;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+.form__field:last-of-type::after {
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 2px;
+    background: var(--bg-color);
+    right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .25s ease-in-out;
+}
+
+.form__field:last-of-type::before {
+    opacity: 0;
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 30px;
+    background: var(--bg-color);
+    right: 61px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    transition: all .25s ease-in-out;
+}
+
+.form__field:last-of-type:hover input[type="submit"] {
+    background: #F51B55;
+    color: #fff;
+}
+
+.form__field:last-of-type:hover:after {
+    width: 30px;
+    background: #fff;
+}
+
+.form__field:last-of-type:hover:before {
+    opacity: 1;
+    background: #fff;
+}
+
+.hero__form .form-register,
+.hero__form .form-register button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.035em;
+    color: #6C6C6C;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero__form .form-register button {
+    text-decoration-line: underline;
+    color: #F11E3C;
+    background: transparent;
+    border: none;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.table-custom td {
+    position: relative;
+}
+
+.table-custom td input,
+.table-custom td select {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    line-height: 2rem;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.table-custom td select {
+    width: calc(100% - 10px) !important;
+}
+
+.table-custom td label {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-40%);
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.035em;
+    transition: all .25s ease-in-out;
+}
+
+.table-custom td input:invalid~label {
+    color: #F11E3C;
+}
+
+.table-custom td input:valid~label {
+    color: #00CD15;
+}
+
+.table-custom .btn-text {
+    margin-bottom: 10px;
+}
+
+.table-custom input[type="checkbox"] {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
